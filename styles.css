@@ -1,16 +1,9 @@
 @font-face {
-    src: url(fonts/SignikaNegative.ttf);
-    font-family: 'Signika Negative', sans-serif;
+    src: url('/fonts/SignikaNegative.ttf');
+    font-family: 'Signika Negative';
 }
-/* Main part */
 
-/* .main-div {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    border-style: solid;
-    margin: auto;
-} */
+/* Main part */
 
 .grid2 {
     display: grid;
@@ -20,14 +13,7 @@
     grid-template-rows: 400px;
 }
 
-/* .grid2 div {
-    display: inline;
-    margin: auto;
-} */
-
 .text {
-    /* display: flex;
-    justify-content: center; */
     margin: auto;
     font-family: 'Kanit', Arial, sans-serif;
 }
@@ -68,9 +54,6 @@ button {
 
 .about-text {
     display: grid;
-    /* grid-template-columns: subgrid; */
-    /* grid-template-rows: repeat(2, 1fr); */
-
 }
 
 .about-text ul {
@@ -216,13 +199,13 @@ button {
 
 ul {list-style-type: none;}
 
+/* For mobile devices */
 @media screen and (max-width: 600px) {
     .grid2 {
         display: grid;
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 400px;
-        /* border-style: dashed; */
     }
     
     .hello-photo img {
