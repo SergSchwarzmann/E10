@@ -4,28 +4,46 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume Site</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <script src="scripts.js"></script>
+    <script defer src="scripts.js" type="text/javascript"></script>
 </head>
 <body>
 
     <!-- Main part -->
     <div class="main-div">
-        <p class="hello-header text">This is hello text</p>
+        <p class="hello-header text" style="display: none;">This is hello text</p>
         <div class="grid2 hello-grid">
-            <div class="hello-text in-grid">Hello text</div>
-            <div class="hello-photo photo in-grid"> <img src="/img/puss-in-boots-hello.jpg" alt="image"> </div>
+            <div class="hello-text text">
+                <p style="font-size: 35px;">Hello!</p>
+                <p>I'm Sergey Schwarzmann</p>
+                <p>Student in online school Skillfactory</p>
+            </div>
+            <div class="hello-photo photo"> <img src="img/puss-in-boots-hello.jpg" alt="image"> </div>
         </div>
-        <p class="about-header text">This is text about me</p>
+        <p class="about-header text" style="display: none;">This is text about me</p>
         <div class="grid2 about-grid">
-            <div class="about-photo photo"><img src="/img/puss-in-boots-about.jpg" alt="image"> </div>
-            <div class="about-text">About me!</div>
+            <div class="about-photo photo"><img src="img/puss-in-boots-about.jpg" alt="image"> </div>
+            <div class="about-text text" style="font-size: 35px;">About me
+                <ul>
+                    <li>Name:</li>
+                    <li>Date of birth:</li>
+                    <li>Address:</li>
+                    <li>Email:</li>
+                    <li>Phone:</li>
+                </ul>
+                <ul>
+                    <li>Serg Schwarzmann</li>
+                    <li>February 04, 1977</li>
+                    <li>Kazakhstan, Temirtau</li>
+                    <li>tm_adm@mail.ru</li>
+                    <li>+7 123 456 7890</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Experience part -->
-    <p class="experience-header text">Experience</p>
-
-    <div class="timeline">
+    <button type="button" class="collapsible">Experience</button>
+    <div class="timeline scroll">
         <div class="container-exp left">
             <div class="content-exp">
                 <h2>June 2022</h2>
@@ -54,7 +72,7 @@
 
     <!-- Skill part -->
     <button type="button" class="collapsible">Skills</button>
-    <div class="skill-part">
+    <div class="skill-part scroll">
         <p>HTML</p>
         <div class="container-skill">
             <div class="skills html">90%</div>
@@ -80,5 +98,6 @@
             <div class="skills jango">50%</div>
         </div>
     </div>
+
 </body>
 </html>
